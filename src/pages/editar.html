@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Editar cliente</title>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html">Inicio</a>
+        <a href="./cadastrar.html">Cadastrar cliente</a>
+        <a href="./editar.html">Editar cliente</a>
+        <a href="./deletar.html">Deletar cliente</a>
+    </header>
+    <section>
+       
+        <h2>Editar cliente</h2>
+
+        <form action="#">
+            <h3>Buscar Cliente</h3>
+            <select id="inputSelect" name="buscarCliente" id="buscarCliente">
+                <option   option value="1">Bruno Fernando Castro</option>
+            </select>
+            <button class="btn_buscar">Buscar cliente</button>
+        </form>
+        
+        <hr>
+        <h2>Editar cliente</h2>
+        <form class="formDados" action="#">
+
+            <input id="inputName" type="text" name="nome" value="">
+            <input id="inputNasc" type="date" name="data_nasc" value="">
+            <select id="inputSexo" name="sexo">
+                <option selected value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+            <input id="inputEmail" type="email" name="email" value="bruno_monteiro@cordeiromaquinas.com.br">
+
+            <hr>
+            <h3>Cadastrar Endereço:</h3>
+            <input id="inputCep" type="number" name="cep" value="49088140">
+            <input id="inputRua" type="text" name="rua" value="Rua Treze">
+            <input id="inputNumero" type="number" name="numero" value="499">
+            <input id="inputBairro"type="text" name="bairro" value="Lamarão">
+            <input id="inputCidade" type="text" name="cidade" value="Aracaju">
+            <select id="inputEstado"id="estado" name="estado">
+                <option selected value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+
+            <hr>
+            <h3>Cadastrar Contato:</h3>
+            <input id="inputTelefone" type="tel" name="telefone_fixo" value="7928955976">
+
+            
+            <input id="btn_editar" type="submit" value="Editar">
+        </form>
+
+
+        <script type="module" src="../js/Editar.js"></script>
+</body>
+</html>
